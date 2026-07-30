@@ -6,7 +6,7 @@ import AboutMe from './components/AboutMe'
 import Competences from './components/Competences'
 import Projets from './components/Projets'
 import Passions from './components/Passions'
-
+import CV from './components/CV'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -28,6 +28,7 @@ function App() {
         <Projets />
         <Parcours />
         <Passions/>
+        <CV/>
       </div>
     </>
   )

@@ -24,10 +24,10 @@ function Passions(props) {
     };
   return (
     <>
-        <setion>
+        <section>
             <EspacePassion {...montage}/>
             <EspacePassion {...musique}/>
-            <div className='w-full relative'>
+            <div className='w-full relative h-[1000px]'>
                 <img src={angelsegg} alt="affiche film" className='absolute left-220 top-3 w-150'/>
                 <img src={belladonna} alt="affiche film" className='absolute left-320 top-150 w-120'/>
                 <img src={devilman} alt="affiche film" className='absolute left-250 top-78 w-80'/>
@@ -36,9 +36,9 @@ function Passions(props) {
                 <img src={portrait_feu} alt="affiche film" className='absolute left-80 top-0 w-130'/>
                 <img src={psycho} alt="affiche film" className='absolute left-40 top-153 w-90'/>
                 <img src={blood} alt="affiche film" className='absolute left-400 top-10 w-70'/>
-                <img src={lucioles} alt="affiche film" className='relative left-10 top-10 w-80'/>
+                <img src={lucioles} alt="affiche film" className='absolute left-10 top-10 w-80'/>
             </div>
-        </setion>
+        </section>
     </>
   )
 }

@@ -2,7 +2,6 @@ import logo_callo from "./../assets/icons/logo_marcelcallo.png"
 import logo_iut from "./../assets/icons/logo_iut_lannion.webp"
 import logo_cil from "./../assets/icons/logo_cil.webp"
 
-
 function Parcours() {
   return (
     <>

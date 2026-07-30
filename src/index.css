@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: DM Serif Display;
+    src: url('./assets/fonts/DMSerifDisplay-Regular.ttf');
+}
+
+@font-face {
+    font-family: Space Grotesk;
+    src: url('./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Open Sans;
+    src: url('./assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf');
+}
+
+@theme {
+  /* Ici, tu dis à Tailwind : crée la classe font-serif-display */
+  --font-serif-display: 'DM Serif Display', serif;
+  --font-space-grotesk: 'Space Grotesk', sans-serif;
+  --font-open-sans: 'Open Sans', sans-serif;
+  --color-white-menu: #FFFFFF;
+  --color-brand-bg: #F5F5F5;
+  --color-grey-bg: #D9D9D9;
+  --color-purple-second: #7F5AF0;
+  --color-blue-second: #7F5AF0;
+  --color-grey-border: #CFCFCF;
+}
+
+@layer components {
+  .title-primary {
+    @apply font-serif-display text-5xl pe-2 text-black;
+  }
+}
+
+@layer components {
+  .border-projets {
+    @apply w-1/2 flex justify-center items-center bg-white rounded-xl border-1 border-grey-border;
+  }
+}
+
+@layer components {
+  .timeline-line {
+    @apply relative before:absolute before:left-1/2 before:top-0 before:h-full before:w-[2px] before:bg-purple-second before:-translate-x-1/2;
+  }
+}
+
+@layer components {
+  .timeline-point {
+    @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4.5 h-4.5 bg-purple-second rounded-full z-10 border-2 border-grey-bg;
+  }
+}
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    @apply bg-neutral-100;
+}
+

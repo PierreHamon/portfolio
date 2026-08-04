@@ -1,5 +1,4 @@
 import img_cv from "./../assets/images/CV_generaliste.png"
-import CV_pdf from "./../../public/CV_generaliste.pdf"
 
 function CV() {
   return (
@@ -15,7 +14,7 @@ function CV() {
                 </svg>
             </div>
             <img src={img_cv} alt="image de mon CV" className="w-[50%]"/>
-            <a href={CV_pdf} download="CV_Pierre_Hamon.pdf" className="bg-purple-second px-15 py-1 rounded-md my-7">
+            <a href="/CV_generaliste.pdf" download="CV_Pierre_Hamon.pdf" className="bg-purple-second px-15 py-1 rounded-md my-7">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="2.5em" height="2.5em" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="12" y1="4" x2="12" y2="15" />
                 <polyline points="7 10 12 15 17 10" />

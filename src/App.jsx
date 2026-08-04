@@ -7,6 +7,8 @@ import Competences from './components/Competences'
 import Projets from './components/Projets'
 import Passions from './components/Passions'
 import CV from './components/CV'
+import Contact from './components/Contact'
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -27,8 +29,8 @@ function App() {
         <Competences/>
         <Projets />
         <Parcours />
-        <Passions/>
         <CV/>
+        <Contact />
       </div>
     </>
   )

@@ -52,9 +52,17 @@
   }
 }
 
+@layer components {
+  .formulaire-input {
+    @apply bg-white rounded-xs text-lg my-2 p-2 w-7xl border-b-2 border-grey-bg;
+  }
+}
+
 
 html {
 	scroll-behavior: smooth;
+  max-width: 100vw;
+  overflow-x: hidden
 }
 
 body {

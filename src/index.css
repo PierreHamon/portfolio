@@ -54,7 +54,13 @@
 
 @layer components {
   .formulaire-input {
-    @apply bg-white rounded-xs text-lg my-2 p-2 w-7xl border-b-2 border-grey-bg;
+    @apply bg-white rounded-xs text-sm my-2 p-2 pb-6 w-7xl border-b-2 border-grey-bg;
+  }
+}
+
+@layer components {
+  .formulaire-cross {
+    @apply absolute top-1/2 -translate-y-1/2 right-3 cursor-pointer text-gray-500 hover:text-black;
   }
 }
 

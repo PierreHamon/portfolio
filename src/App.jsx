@@ -8,6 +8,7 @@ import Projets from './components/Projets'
 import Passions from './components/Passions'
 import CV from './components/CV'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -29,8 +30,10 @@ function App() {
         <Competences/>
         <Projets />
         <Parcours />
+        {/* <Passions /> */}
         <CV/>
         <Contact />
+        <Footer />
       </div>
     </>
   )

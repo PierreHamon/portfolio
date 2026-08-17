@@ -3,7 +3,7 @@ import img_cv from "./../assets/images/CV_generaliste.png"
 function CV() {
   return (
     <>
-        <section className="flex flex-col items-center">
+        <section id="curriculum vitae" className="flex flex-col items-center">
             <div className="flex justify-center items-center py-5">
                 <h1 className="title-primary">Curriculum vitae</h1>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="3em" height="3em" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">

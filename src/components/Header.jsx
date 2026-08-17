@@ -9,7 +9,7 @@ function Header() {
         <a href="#projets" className="hover:bg-grey-bg p-2 px-5">Projets</a>
         <a href="#parcours" className="hover:bg-grey-bg p-2 px-5">Parcours</a>
         <a href="#passions" className="hover:bg-grey-bg p-2 px-5">Passions</a>
-        <a href="#cv" className="hover:bg-grey-bg p-2 px-5">CV</a>
+        <a href="#curriculum vitae" className="hover:bg-grey-bg p-2 px-5">CV</a>
         <a href="#contact" className="hover:bg-grey-bg p-2 px-5">Contact</a>
       </nav>
 
@@ -23,6 +23,7 @@ function Header() {
           </svg>
         </a>
       </div>
+      
     </header>
   )
 }

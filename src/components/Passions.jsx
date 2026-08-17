@@ -24,7 +24,7 @@ function Passions(props) {
     };
   return (
     <>
-        <section>
+        <section id="passions">
             <EspacePassion {...montage}/>
             <EspacePassion {...musique}/>
             <div className='w-full relative h-[1000px]'>

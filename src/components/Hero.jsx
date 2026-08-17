@@ -3,7 +3,7 @@ import photoMoi from './../assets/images/photo_portfolio.jpg';
 function Hero() {
   return (
     <>
-  <section className="flex flex-col-reverse items-center md:flex-row bg-grey-bg mt-5 pt-5 md:pt-10 pb-10 ps-[10%] pe-[5%] justify-between">
+  <section id="presentation" className="flex flex-col-reverse items-center md:flex-row bg-grey-bg mt-5 pt-5 md:pt-10 pb-10 ps-[10%] pe-[5%] justify-between">
     <div className='flex flex-col items-center md:items-start'>
       <h1 className="font-serif-display text-5xl md:text-8xl">
         Pierre Hamon

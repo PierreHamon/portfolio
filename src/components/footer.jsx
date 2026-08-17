@@ -2,34 +2,35 @@ import GitHub_logo from "./../assets/icons/GitHub_Invertocat_Black_Clearspace.pn
 import Linkedin_logo from "./../assets/icons/linkedin_logo.png"
 import Tel_logo from "./../assets/icons/tel_logo.png"
 import Email_logo from "./../assets/icons/email_logo.png"
+import ElementList from "./ElementList"
 
 function Footer() {
   return (
     <>
-    <footer className="bg-grey-bg">
+    <footer className="bg-grey-bg mt-30">
         <div className="flex flex-row justify-between mx-70 pt-7 pb-15">{/* Navigation */}
           <div>
-            <h3 className="text-3xl font-serif-display">Navigation</h3>
+            <h3 className="text-3xl font-serif-display mb-2">Navigation</h3>
             <div className="flex flex-row">
               <ul className="me-5">
-                <li className="font-open-sans">Accueil</li>
-                <li className="font-open-sans">Présentation</li>
-                <li className="font-open-sans">Compétences</li>
-                <li className="font-open-sans">Projets</li>
+                <ElementList name="Accueil" />
+                <ElementList name="Présentation" />
+                <ElementList name="Compétences" />
+                <ElementList name="Projets" />
               </ul>
               <ul>
-                <li className="font-open-sans">Parcours</li>
-                <li className="font-open-sans">Passions</li>
-                <li className="font-open-sans">Curriculum vitae</li>
-                <li className="font-open-sans">Contact</li>
+                <ElementList name="Parcours" />
+                <ElementList name="Passions" />
+                <ElementList name="Curriculum vitae" />
+                <ElementList name="Contact" />
               </ul>
             </div>
           </div>
           <div className="flex flex-col items-center">{/* Réseaux */}
-            <h3 className="text-3xl font-serif-display">Réseaux</h3>
+            <h3 className="text-3xl font-serif-display mb-2">Réseaux</h3>
             <div className="flex flex-row items-center gap-2">
-              <a href="https://github.com/PierreHamon"><img src={GitHub_logo} alt="logo github" className="w-12.5"/></a>
-              <a href="https://www.linkedin.com/in/pierre-hamon-62059a269/"><img src={Linkedin_logo} alt="logo github" className="w-12.5"/></a>
+              <a href="https://github.com/PierreHamon" target="_blank" rel="noopener noreferrer"><img src={GitHub_logo} alt="logo github" className="w-12.5"/></a>
+              <a href="https://www.linkedin.com/in/pierre-hamon-62059a269/" target="_blank" rel="noopener noreferrer"><img src={Linkedin_logo} alt="logo github" className="w-12.5"/></a>
               <a href="tel:+330767007918"><img src={Tel_logo} alt="logo github" className="w-12.5"/></a>
               <a href="mailto:pierrehmn1@gmail.com"><img src={Email_logo} alt="logo github" className="w-12.5"/></a>
             </div>

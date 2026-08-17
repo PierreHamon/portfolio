@@ -18,7 +18,7 @@ function Projets() {
     };
   return (
     <>
-    <section className="">
+    <section id="projets">
         <div className="flex justify-center items-center py-5 ">
             <h1 className="title-primary">Projets</h1>
             <svg 

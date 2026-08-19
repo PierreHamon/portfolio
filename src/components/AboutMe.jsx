@@ -21,13 +21,11 @@ function AboutMe() {
                 <circle cx="12" cy="17" r="0.5" fill="currentColor" stroke="none" />
             </svg>
         </div>
-        <p className="font-open-sans text-lg">
-            Je m’appel Pierre Hamon je suis diplomé d’un BUT informatique en alternance au Centre Informatique de Lamballe.
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
+        <p className="font-open-sans text-lg text-justify">
+            Je m’appel Pierre Hamon je suis diplomé d’un BUT informatique parcours développement d'applications
+            de l'IUT de Lannion réalisé en alternance au Centre Informatique de Lamballe. J'ai pris une année
+            sabatique en 2025 pour découvrir le monde et moi-même en voyageant, faisant des dizaines de projets
+            dans différents domaine.
         </p>
         
     </section>

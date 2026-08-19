@@ -3,16 +3,30 @@ import EspaceProjet from './EspaceProjet';
 
 function Projets() {
     const Projet1 = {
-    titre: "Réalisation d’une Plateforme de Location Saisonnière",
+    titre: "Puissance 4 automatique",
     soustitre: "En groupe à l'IUT",
-    description: "Réalisation à l'IUT d'un site de location saisonnier en Bretagne nommé ALHaIZ Breizh avec un échange avec le client, une équipe réaliste composée notamment d'un Product Owner, d'un Scrum Master et de développeur (j'étais développeur). Le tout sur 6 semaines, 2 de préparation et ensuite 2 sprints de 2semaines.",
+    description: "Réalisation en duo en première année de BUT d'un puissance 4 en C avec affichage dans le terminal linux, le jeu est une version optimiser du jeu de base se jouant tout seul. Cette fois il joue de façon automatique avec différentes stratégies plus ou moins avancées.",
     imageprojet: p4screen,
     inverse: false
     };
     const Projet2 = {
+    titre: "Modification de la gestion de commande adhérant et fournisseur",
+    soustitre: "En alternance en solo",
+    description: "Le projet d'entreprise est une demande de la part d'une cliente qui demande à changer l'interface de la gestion de commande adhérant et fournisseur sur IBM i. Ces interfaces sont des tableaux j'ai eu par exemple à supprimer des colonnes, en renommées, ou bien encore ajouter des fonctionnalités comme un export Excel ou une touche qui permet de voir la commande associé à un article particulier.",
+    imageprojet: p4screen,
+    inverse: true
+    };
+    const Projet3 = {
     titre: "Automatisation intégration RPD",
     soustitre: "En alternance en solo",
     description: "Ce projet d'entreprise consiste à analyser et élaborer un plan pour arriver à rendre autonome les clients dans l'intégration de la redevance pour pollution diffuse qui aujourd'hui est faite par le CIL. Cela permettra d’alléger la charge de travail du CIL.",
+    imageprojet: p4screen,
+    inverse: false
+    };
+    const Projet4 = {
+    titre: "Réalisation d’une Plateforme de Location Saisonnière",
+    soustitre: "En groupe à l'IUT",
+    description: "Réalisation à l'IUT d'un site de location saisonnier en Bretagne nommé ALHaIZ Breizh avec un échange avec le client, une équipe réaliste composée notamment d'un Product Owner, d'un Scrum Master et de développeur (j'étais développeur). Le tout sur 6 semaines, 2 de préparation et ensuite 2 sprints de 2semaines.",
     imageprojet: p4screen,
     inverse: true
     };
@@ -40,7 +54,10 @@ function Projets() {
         </div>
 
         <EspaceProjet {...Projet1}/>
-        <EspaceProjet {...Projet2}/> 
+        <EspaceProjet {...Projet2}/>
+        <EspaceProjet {...Projet3}/>
+        <EspaceProjet {...Projet4}/>
+           
     </section>
     </>
   )

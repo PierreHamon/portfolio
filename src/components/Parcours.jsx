@@ -1,6 +1,7 @@
 import logo_callo from "./../assets/icons/logo_marcelcallo.png"
 import logo_iut from "./../assets/icons/logo_iut_lannion.webp"
 import logo_cil from "./../assets/icons/logo_cil.webp"
+import ElementParcours from "./ElementParcours"
 
 function Parcours() {
   return (
@@ -25,80 +26,25 @@ function Parcours() {
             </svg>
           </div>
           <div>
-            <div className="flex justify-center timeline-line">
-              <div className="w-1/2 flex bg-white rounded-xl max-w-2xl mb-5 p-5 gap-10 h-full items-center ">
-                <div>
-                  <h2 className="font-serif-display text-4xl">
-                  Lycée Marcel callo
-                  </h2>
-                  <h3 className="font-space-grotesk text-xl text-purple-second font-bold ps-3">
-                      BAC Maths et NSI option européenne
-                  </h3>
-                  <p className="font-open-sans text-lg text-justify max-w-2xl">
-                      Dans un environnement où [citer un défi du secteur, ex: la gestion des données
-                      devient complexe], l'entreprise [Nom de l'entreprise ou cible] fait face à
-                      [décrire le problème, ex: une perte de temps lors du traitement manuel des factures]
-                      . Ce manque d'automatisation entraîne [conséquence négative : erreurs, coûts élevés lenteur].
-                  </p>
-                </div>
-                <img src={logo_callo} alt='logo du lycée marcel callo à Redon' className="w-60 h-55"/>
-              </div>
-              <div className="timeline-point">
-              </div>
-              <div className="w-1/2">
-              </div>
-            </div>
+            <ElementParcours titre="Lycée Marcel callo" dates="2019 - 2022"
+              sousTitre="BAC Maths et NSI option européenne"
+              texte="J'ai été étudiant au lycée Marcel callo à Redon (35600), où j'ai
+                    décroché mon BAC spécialité Math et NSI mention bien et européenne."
+              image={logo_callo}/>
 
-            <div className="flex flex-row-reverse justify-center timeline-line">
-              <div className="w-1/2 flex bg-white rounded-xl max-w-2xl mx-auto mb-5 p-5 gap-10 h-full items-center before:absolute before:left-1/2 before:bg-purple-second">
-                <div>
-                  <h2 className="font-serif-display text-4xl">
-                  Iut de Lannion
-                  </h2>
-                  <h3 className="font-space-grotesk text-xl text-purple-second font-bold ps-3">
-                      BUT informatique en alternance
-                  </h3>
-                  <p className="font-open-sans text-lg text-justify max-w-2xl">
-                      Dans un environnement où [citer un défi du secteur, ex: la gestion des données devient
-                      complexe], l'entreprise [Nom de l'entreprise ou cible] fait face à [décrire le
-                      problème, ex: une perte de temps lors du traitement manuel des factures]. Ce manque
-                      d'automatisation entraîne [conséquence négative : erreurs, coûts élevés, lenteur].
-                  </p>
-                </div>
-                <img src={logo_iut} alt='logo du lycée marcel callo à Redon' className="w-50"/>
-              </div>
-              <div className="timeline-point">
-              </div>
-              <div className="w-1/2">
-              </div>
-            </div>
-
-            <div className="flex justify-center timeline-line">
-              <div className="w-1/2 flex bg-white rounded-xl max-w-2xl mx-auto mb-5 p-5 gap-10 h-full items-center before:absolute before:left-1/2 before:bg-purple-second">
-                <div>
-                  <h2 className="font-serif-display text-4xl">
-                  Alternance CIL
-                  </h2>
-                  <h3 className="font-space-grotesk text-xl text-purple-second font-bold ps-3">
-                      Développeur IBM i
-                  </h3>
-                  <p className="font-open-sans text-lg text-justify max-w-2xl">
-                      Dans un environnement où [citer un défi du secteur, ex: la gestion des données devient
-                      complexe], l'entreprise [Nom de l'entreprise ou cible] fait face à [décrire le
-                      problème, ex: une perte de temps lors du traitement manuel des factures]. Ce manque
-                      d'automatisation entraîne [conséquence négative : erreurs, coûts élevés, lenteur].
-                  </p>
-                </div>
-                <img src={logo_cil} alt='logo du lycée marcel callo à Redon' className="w-50"/>
-              </div>
-              <div className="timeline-point">
-              </div>
-              <div className="w-1/2">
-              </div>
-            </div>
-
-          </div>
+            <ElementParcours titre="Iut de Lannion" dates="2022 - 2025"
+              sousTitre="BUT informatique en alternance"
+              texte="J'ai été étudiant à l'IUT de Lannion (22300), j'y ai obtenu mon BUT informatique parcours développement d'applications mention bien.
+                      Ma deuxième et troisième année on été faites en alternance au Centre Informatique de Lamballe (CIL)."
+              image={logo_iut}
+              reverse="true"/>  
             
+            <ElementParcours titre="Alternance CIL" dates="2023 - 2025"
+              sousTitre="Développeur IBM i"
+              texte="Lors de mon alternance j'ai été apprenti développeur IBM i au sein du CIL, j'y fais quelques tâches simples d'abord
+              puis au fur et à mesures des projets plus conséquents."
+              image={logo_cil}/>
+          </div>
         </section>
     </>
   )

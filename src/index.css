@@ -64,6 +64,11 @@
   }
 }
 
+@layer components {
+  .highlight-words {
+    @apply text-purple-second font-bold;
+  }
+}
 
 html {
 	scroll-behavior: smooth;

@@ -22,10 +22,9 @@ function AboutMe() {
             </svg>
         </div>
         <p className="font-open-sans text-lg text-justify">
-            Je m’appel Pierre Hamon je suis diplomé d’un BUT informatique parcours développement d'applications
-            de l'IUT de Lannion réalisé en alternance au Centre Informatique de Lamballe. J'ai pris une année
-            sabatique en 2025 pour découvrir le monde et moi-même en voyageant, faisant des dizaines de projets
-            dans différents domaine.
+            Je m’appel Pierre Hamon je suis diplomé d’un <span className="highlight-words">BUT informatique </span>parcours développement d'applications
+            de l'IUT de Lannion réalisé <span className="highlight-words">en alternance</span> au Centre Informatique de Lamballe. J'ai pris une année
+            sabatique en 2025 pour découvrir le monde et moi-même en voyageant, faisant des <span className="highlight-words">dizaines de projets</span> dans différents domaines.
         </p>
         
     </section>

@@ -12,6 +12,15 @@ function EspaceProjet(props) {
             <p className="font-open-sans text-lg text-justify">
                 {props.description}
             </p>
+            <div className="flex flex-row flex-wrap gap-2 mt-3 justify-center">
+               {props.techno && props.techno.map((techno, index) => (
+                    <div className="inline-flex items-center gap-2 bg-blue-second text-white px-4 py-2 rounded-xl shadow-md font-sans">
+                        <span className="font-bold text-xl tracking-wide ">{techno}</span>
+                    </div>
+                ))} 
+            </div>
+            
+            
         </div>
         <div className='border-projets me-10'>
             <img src={props.imageprojet} alt="screen du puissance 4 automatique dans le terminal" />

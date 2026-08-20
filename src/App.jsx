@@ -33,7 +33,7 @@ function App() {
         <Competences/>
         <Projets />
         <Parcours />
-        {/* <Passions /> */}
+        <Passions />
         <CV/>
         <Contact />
         <Footer />

@@ -1,6 +1,13 @@
+import { motion } from 'framer-motion';
 import img_cv from "./../assets/images/CV_generaliste.png"
 
 function CV() {
+    const Fade = {
+        initial: { opacity: 0},
+        whileInView: { opacity: 1},
+        viewport: { once: true, amount: 0.2 },
+        transition: { duration: 1.5, ease: "easeOut" }
+    };
   return (
     <>
         <section id="curriculum vitae" className="flex flex-col items-center">
@@ -13,7 +20,7 @@ function CV() {
                     <path d="M6 20a6 6 0 0 1 12 0" />
                 </svg>
             </div>
-            <img src={img_cv} alt="image de mon CV" className="w-[40%]"/>
+            <motion.img {...Fade} src={img_cv} alt="image de mon CV" className="w-[40%]"/>
             <a href="/CV_generaliste.pdf" download="CV_Pierre_Hamon.pdf" className="bg-purple-second px-15 py-1 rounded-md my-7">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="2.5em" height="2.5em" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="12" y1="4" x2="12" y2="15" />

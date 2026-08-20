@@ -1,8 +1,22 @@
+import { motion } from 'framer-motion';
 function ElementParcours(props) {
+    const slideRight = {
+        initial: { opacity: 0, x: -80 },
+        whileInView: { opacity: 1, x: 0 },
+        viewport: { once: true, amount: 0.2 },
+        transition: { duration: 0.6, ease: "easeOut" }
+    };
+
+    const slideLeft = {
+        initial: { opacity: 0, x: +80 },
+        whileInView: { opacity: 1, x: 0 },
+        viewport: { once: true, amount: 0.2 },
+        transition: { duration: 0.6, ease: "easeOut" }
+    };
   return (
     <>
         <div className={`flex justify-center timeline-line ${props.reverse ? 'flex-row-reverse' : 'flex-row'}`}>
-            <div className="w-1/2 flex bg-white rounded-xl max-w-2xl mb-5 p-5 gap-10 h-full items-center ">
+            <motion.div {...(props.reverse ? slideLeft : slideRight)} className="w-1/2 flex bg-white rounded-xl max-w-2xl mb-5 p-5 gap-10 h-full items-center ">
                 <div>
                     <div className="flex flex-row items-baseline gap-2">
                         <h2 className="font-serif-display text-4xl">
@@ -18,7 +32,7 @@ function ElementParcours(props) {
                     </p>
                 </div>
                 <img src={props.image} alt='logo du lycée marcel callo à Redon' className="w-60 h-55"/>
-            </div>
+            </motion.div>
             <div className="timeline-point">
             </div>
             <div className="w-1/2">

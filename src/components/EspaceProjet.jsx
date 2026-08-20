@@ -1,8 +1,22 @@
+import { motion } from 'framer-motion';
 function EspaceProjet(props) {
+    const slideRight = {
+        initial: { opacity: 0, x: -80 },
+        whileInView: { opacity: 1, x: 0 },
+        viewport: { once: true, amount: 0.2 },
+        transition: { duration: 0.6, ease: "easeOut" }
+    };
+
+    const slideLeft = {
+        initial: { opacity: 0, x: +80 },
+        whileInView: { opacity: 1, x: 0 },
+        viewport: { once: true, amount: 0.2 },
+        transition: { duration: 0.6, ease: "easeOut" }
+    };
   return (
     <>    
     <div className={`flex px-20 py-10 ${props.inverse ? 'flex-row-reverse' : ''}`}>
-        <div className="flex flex-col items-center w-1/2 mx-10">
+        <motion.div {...(props.inverse ? slideLeft : slideRight)} className="flex flex-col items-center w-1/2 mx-10">
             <h2 className="font-serif-display text-4xl">
                 {props.titre}
             </h2>
@@ -21,10 +35,10 @@ function EspaceProjet(props) {
             </div>
             
             
-        </div>
-        <div className='border-projets me-10 overflow-hidden h-120'>
+        </motion.div>
+        <motion.div {...(props.inverse ? slideRight : slideLeft)} className='border-projets me-10 overflow-hidden h-120'>
             <img src={props.imageprojet} alt="screen du puissance 4 automatique dans le terminal" className={`${props.fullscreen ? 'w-full' : 'h-full'} object-cover`}/>
-        </div>
+        </motion.div>
     </div>
     </>
   )

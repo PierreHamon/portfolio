@@ -22,8 +22,8 @@ function EspaceProjet(props) {
             
             
         </div>
-        <div className='border-projets me-10'>
-            <img src={props.imageprojet} alt="screen du puissance 4 automatique dans le terminal" />
+        <div className='border-projets me-10 overflow-hidden h-120'>
+            <img src={props.imageprojet} alt="screen du puissance 4 automatique dans le terminal" className={`${props.fullscreen ? 'w-full' : 'h-full'} object-cover`}/>
         </div>
     </div>
     </>

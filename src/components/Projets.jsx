@@ -84,7 +84,7 @@ function Projets() {
     imageprojet: portfolio_projet,
     inverse: false,
     fullscreen: true,
-    techno : ["Figma", "React", "Tailwind CSS", "Vue", "web3forms", "HTML5", "CSS3", "JavaScipt ES6+"]
+    techno : ["Figma", "React", "Tailwind CSS", "Vue", "Web3forms", "Framer Motion", "HTML5", "CSS3", "JavaScipt ES6+"]
     };
   return (
     <>

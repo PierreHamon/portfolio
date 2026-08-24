@@ -48,8 +48,9 @@ function Footer() {
           </svg>
           <br/> avec <a href="https://fr.react.dev/" target="_blank" rel="noopener noreferrer" className="font-bold">React, </a>
           <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" className="font-bold">Tailwind CSS, </a>
-          <a href="https://vite.dev/" target="_blank" rel="noopener noreferrer" className="font-bold">Vite</a> et
-          <a href="https://web3forms.com/" target="_blank" rel="noopener noreferrer" className="font-bold"> Web3Forms</a>
+          <a href="https://vite.dev/" target="_blank" rel="noopener noreferrer" className="font-bold">Vite,</a>
+          <a href="https://web3forms.com/" target="_blank" rel="noopener noreferrer" className="font-bold"> Web3Forms</a> et
+          <a href="https://www.framer.com/dictionary/framer-motion" target="_blank" rel="noopener noreferrer" className="font-bold"> Framer Motion</a>
           </p>
         </div>
     </footer>

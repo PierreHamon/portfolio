@@ -12,28 +12,49 @@ import lotr from './../assets/images/lotr_livre.jpg';
 import berserk from './../assets/images/berserk_livre.jpg';
 import dune from './../assets/images/dune_livre.jpg';
 import jojo from './../assets/images/jojo_livre.jpg';
+import fl1 from './../assets/images/fl1.png'
+import fl2 from './../assets/images/fl2.png'
+import fl3 from './../assets/images/fl3.png'
+import fl4 from './../assets/images/fl4.png'
+import fl5 from './../assets/images/fl5.png'
+import fl6 from './../assets/images/fl6.png'
+import fl7 from './../assets/images/fl7.png'
+import fl8 from './../assets/images/fl8.png'
+import fl9 from './../assets/images/fl9.png'
+import fl10 from './../assets/images/fl10.png'
+import fl11 from './../assets/images/fl11.png'
+import AudioPlayer from './AudioPlayer';
+import amireal from "./../assets/audio/AM_I_REAL.mp3"
+import amireal_cover from "./../assets/images/am_i_real_cover.jpg"
 
 function Passions(props) {
 
-    const slideRight = {
+    const slideRight = (delay = 0) => ({
         initial: { opacity: 0, x: -80 },
         whileInView: { opacity: 1, x: 0 },
         viewport: { once: true, amount: 0.2 },
-        transition: { duration: 0.6, ease: "easeOut" }
-    };
+        transition: { duration: 0.6, ease: "easeOut", delay } // <--- delay injecté ici
+    });
 
-    const slideLeft = {
+    const slideLeft = (delay = 0) => ({
         initial: { opacity: 0, x: +80 },
         whileInView: { opacity: 1, x: 0 },
         viewport: { once: true, amount: 0.2 },
-        transition: { duration: 0.6, ease: "easeOut" }
-    };
+        transition: { duration: 0.6, ease: "easeOut", delay } // <--- delay injecté ici
+    });
 
-    const slideDown = {
+    const slideDown = (delay = 0) => ({
         initial: { opacity: 0, y: -80 },
         whileInView: { opacity: 1, y: 0 },
         viewport: { once: true, amount: 0.2 },
-        transition: { duration: 0.6, ease: "easeOut" }
+        transition: { duration: 0.6, ease: "easeOut", delay }
+    });
+
+    const Fade = {
+        initial: { opacity: 0},
+        whileInView: { opacity: 1},
+        viewport: { once: true, amount: 0.2 },
+        transition: { duration: 1, ease: "easeOut" }
     };
 
   return (
@@ -52,19 +73,19 @@ function Passions(props) {
             </div>
             <h2 className='font-serif-display text-4xl relative z-20 m-5'>Cinéma</h2>
             <div className='w-full relative h-[1000px]'>
-                <motion.img {...slideDown} src={angelsegg} alt="affiche film" className='absolute left-220 top-3 w-150 z-20 bg-white'/>
-                <motion.img {...slideLeft} src={belladonna} alt="affiche film" className='absolute left-320 top-150 w-120 z-20 bg-white'/>
-                <motion.img {...slideDown} src={devilman} alt="affiche film" className='absolute left-250 top-78 w-80 z-20 bg-white'/>
-                <motion.img {...slideDown} src={grave} alt="affiche film" className='absolute left-120 top-63 w-50 z-20 bg-white'/>
-                <motion.img {...slideRight} src={ponyo} alt="affiche film" className='absolute left-140 top-153 w-70 z-20 bg-white'/>
-                <motion.img {...slideRight} src={portrait_feu} alt="affiche film" className='absolute left-80 top-0 w-130 z-20 bg-white'/>
-                <motion.img {...slideRight} src={psycho} alt="affiche film" className='absolute left-40 top-153 w-90 z-20 bg-white'/>
-                <motion.img {...slideLeft} src={blood} alt="affiche film" className='absolute left-400 top-10 w-70 z-20 bg-white'/>
-                <motion.img {...slideRight} src={lucioles} alt="affiche film" className='absolute left-10 top-10 w-80 z-20 bg-white'/>
+                <motion.img {...slideDown()} src={angelsegg} alt="affiche film" className='absolute left-220 top-3 w-150 z-20 bg-white'/>
+                <motion.img {...slideLeft()} src={belladonna} alt="affiche film" className='absolute left-320 top-150 w-120 z-20 bg-white'/>
+                <motion.img {...slideDown()} src={devilman} alt="affiche film" className='absolute left-250 top-78 w-80 z-20 bg-white'/>
+                <motion.img {...slideDown()} src={grave} alt="affiche film" className='absolute left-120 top-63 w-50 z-20 bg-white'/>
+                <motion.img {...slideRight()} src={ponyo} alt="affiche film" className='absolute left-140 top-153 w-70 z-20 bg-white'/>
+                <motion.img {...slideRight()} src={portrait_feu} alt="affiche film" className='absolute left-80 top-0 w-130 z-20 bg-white'/>
+                <motion.img {...slideRight()} src={psycho} alt="affiche film" className='absolute left-40 top-153 w-90 z-20 bg-white'/>
+                <motion.img {...slideLeft()} src={blood} alt="affiche film" className='absolute left-400 top-10 w-70 z-20 bg-white'/>
+                <motion.img {...slideRight()} src={lucioles} alt="affiche film" className='absolute left-10 top-10 w-80 z-20 bg-white'/>
             </div>
             <h2 className='flex font-serif-display text-4xl justify-end z-20 m-5'>Montage vidéo</h2>
             <div className="flex flex-row w-9/10 h-auto rounded-xl mx-auto my-20 justify-center gap-5">
-                <div className="flex-1 aspect-video rounded-xl overflow-hidden shadow-lg">
+                <motion.div {...slideRight()} className="flex-1 aspect-video rounded-xl overflow-hidden shadow-lg">
                     <iframe
                         className="w-full h-full border-0"
                         src="https://www.youtube.com/embed/U2LM3MxTas8"
@@ -72,8 +93,8 @@ function Passions(props) {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowFullScreen
                     ></iframe>
-                </div>
-                <div className="flex-1 aspect-video rounded-xl overflow-hidden shadow-lg">
+                </motion.div>
+                <motion.div {...Fade} className="flex-1 aspect-video rounded-xl overflow-hidden shadow-lg">
                     <iframe
                         className="w-full h-full border-0"
                         src="https://www.youtube.com/embed/cXeQRNSgOxM"
@@ -81,8 +102,8 @@ function Passions(props) {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowFullScreen
                     ></iframe>
-                </div>
-                <div className="flex-1 aspect-video rounded-xl overflow-hidden shadow-lg">
+                </motion.div>
+                <motion.div {...slideLeft()} className="flex-1 aspect-video rounded-xl overflow-hidden shadow-lg">
                     <iframe
                         className="w-full h-full border-0"
                         src="https://www.youtube.com/embed/mJSJxDf4yxs"
@@ -90,16 +111,35 @@ function Passions(props) {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowFullScreen
                     ></iframe>
-                </div>
+                </motion.div>
             </div>
             <h2 className='flex font-serif-display text-4xl justify-start z-20 m-5'>Création musicale</h2>
+            <div className='flex flex-col justify-center items-center opacity-65'>
+                <motion.img {...slideLeft(0.6)} src={fl1} alt="affiche film" className='w-[94%] z-20'/>
+                <motion.img {...slideRight(0.6)} src={fl11} alt="affiche film" className='w-[94%] z-20'/>
+                <motion.img {...slideLeft(0.6)} src={fl10} alt="affiche film" className='w-[94%] z-20'/>
+                <motion.img {...slideRight(0.6)} src={fl7} alt="affiche film" className='w-[94%] z-20'/>
+                <motion.img {...slideLeft(0.6)} src={fl8} alt="affiche film" className='w-[94%] z-20'/>
+                <motion.img {...slideRight(0.6)} src={fl6} alt="affiche film" className='w-[94%] z-20'/>
+                <motion.img {...slideLeft(0.6)} src={fl2} alt="affiche film" className='w-[94%] z-20'/>
+                <motion.img {...slideRight(0.6)} src={fl3} alt="affiche film" className='w-[94%] z-20'/>
+                <motion.img {...slideLeft(0.6)} src={fl4} alt="affiche film" className='w-[94%] z-20'/>
+                <motion.img {...slideRight(0.6)} src={fl5} alt="affiche film" className='w-[94%] z-20'/>
+                <motion.img {...slideLeft(0.6)} src={fl9} alt="affiche film" className='w-[94%] z-20'/>
+            </div>
+
+            <AudioPlayer 
+                    title="AM I REAL ?" 
+                    audioUrl={amireal}
+                    cover={amireal_cover} 
+                />
 
             <h2 className='flex font-serif-display text-4xl justify-end z-20 m-5'>Littérature</h2>
             <div className='w-full relative h-[1000px]'>
-                <motion.img {...slideDown} src={lotr} alt="affiche film" className='absolute left-220 top-3 w-150 z-20 bg-white'/>
-                <motion.img {...slideDown} src={berserk} alt="affiche film" className='absolute left-320 top-150 w-120 z-20 bg-white'/>
-                <motion.img {...slideDown} src={dune} alt="affiche film" className='absolute left-80 top-0 w-130 z-20 bg-white'/>
-                <motion.img {...slideDown} src={jojo} alt="affiche film" className='absolute left-10 top-10 w-80 z-20 bg-white'/>
+                <motion.img {...slideLeft(0.6)} src={lotr} alt="affiche film" className='absolute left-[62%] top-[2%] w-150 z-20 bg-white'/>
+                <motion.img {...slideLeft(0.4)} src={berserk} alt="affiche film" className='absolute left-[43%] top-[20%] w-105 z-20 bg-white'/>
+                <motion.img {...slideLeft(0.2)} src={dune} alt="affiche film" className='absolute left-[17%] w-120 z-20 bg-white'/>
+                <motion.img {...slideLeft()} src={jojo} alt="affiche film" className='absolute left-[2%] top-[4%] w-90 z-20 bg-white'/>
             
             </div>
         </section>

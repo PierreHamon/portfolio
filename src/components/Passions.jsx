@@ -24,8 +24,6 @@ import fl9 from './../assets/images/fl9.png'
 import fl10 from './../assets/images/fl10.png'
 import fl11 from './../assets/images/fl11.png'
 import AudioPlayer from './AudioPlayer';
-import amireal from "./../assets/audio/AM_I_REAL.mp3"
-import amireal_cover from "./../assets/images/am_i_real_cover.jpg"
 
 function Passions(props) {
 
@@ -114,25 +112,26 @@ function Passions(props) {
                 </motion.div>
             </div>
             <h2 className='flex font-serif-display text-4xl justify-start z-20 m-5'>Création musicale</h2>
-            <div className='flex flex-col justify-center items-center opacity-65'>
-                <motion.img {...slideLeft(0.6)} src={fl1} alt="affiche film" className='w-[94%] z-20'/>
-                <motion.img {...slideRight(0.6)} src={fl11} alt="affiche film" className='w-[94%] z-20'/>
-                <motion.img {...slideLeft(0.6)} src={fl10} alt="affiche film" className='w-[94%] z-20'/>
-                <motion.img {...slideRight(0.6)} src={fl7} alt="affiche film" className='w-[94%] z-20'/>
-                <motion.img {...slideLeft(0.6)} src={fl8} alt="affiche film" className='w-[94%] z-20'/>
-                <motion.img {...slideRight(0.6)} src={fl6} alt="affiche film" className='w-[94%] z-20'/>
-                <motion.img {...slideLeft(0.6)} src={fl2} alt="affiche film" className='w-[94%] z-20'/>
-                <motion.img {...slideRight(0.6)} src={fl3} alt="affiche film" className='w-[94%] z-20'/>
-                <motion.img {...slideLeft(0.6)} src={fl4} alt="affiche film" className='w-[94%] z-20'/>
-                <motion.img {...slideRight(0.6)} src={fl5} alt="affiche film" className='w-[94%] z-20'/>
-                <motion.img {...slideLeft(0.6)} src={fl9} alt="affiche film" className='w-[94%] z-20'/>
+            <div className="relative w-full ">
+                <div className='flex flex-col justify-center items-center opacity-65'>
+                    <motion.img {...slideLeft(0.6)} src={fl1} alt="affiche film" className='w-[94%] z-20'/>
+                    <motion.img {...slideRight(0.6)} src={fl11} alt="affiche film" className='w-[94%] z-20'/>
+                    <motion.img {...slideLeft(0.6)} src={fl10} alt="affiche film" className='w-[94%] z-20'/>
+                    <motion.img {...slideRight(0.6)} src={fl7} alt="affiche film" className='w-[94%] z-20'/>
+                    <motion.img {...slideLeft(0.6)} src={fl8} alt="affiche film" className='w-[94%] z-20'/>
+                    <motion.img {...slideRight(0.6)} src={fl6} alt="affiche film" className='w-[94%] z-20'/>
+                    <motion.img {...slideLeft(0.6)} src={fl2} alt="affiche film" className='w-[94%] z-20'/>
+                    <motion.img {...slideRight(0.6)} src={fl3} alt="affiche film" className='w-[94%] z-20'/>
+                    <motion.img {...slideLeft(0.6)} src={fl4} alt="affiche film" className='w-[94%] z-20'/>
+                    <motion.img {...slideRight(0.6)} src={fl5} alt="affiche film" className='w-[94%] z-20'/>
+                    <motion.img {...slideLeft(0.6)} src={fl9} alt="affiche film" className='w-[94%] z-20'/>
+                </div>
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 max-w-[92%] z-30">
+                    <AudioPlayer/>
+                </div>
             </div>
 
-            <AudioPlayer 
-                    title="AM I REAL ?" 
-                    audioUrl={amireal}
-                    cover={amireal_cover} 
-                />
+            
 
             <h2 className='flex font-serif-display text-4xl justify-end z-20 m-5'>Littérature</h2>
             <div className='w-full relative h-[1000px]'>

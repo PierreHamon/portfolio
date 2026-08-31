@@ -6,39 +6,22 @@ import logo_cil from "./../assets/icons/logo_cil.webp";
 import ElementParcours from "./ElementParcours";
 
 function Parcours() {
-  const containerRef = useRef(null);
-
-  // Suivi du scroll sur TOUTE la section
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    // "end start" signifie que l'animation se termine quand le BAS de la section atteint le HAUT de l'écran
-    offset: ["start 60%", "end start"] 
-  });
-
-  // Animation fluide du remplissage (évite les à-coups)
-  const scaleY = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001
-  });
+  // 1. La ref englobe toute la section pour couvrir la totalité du défilement
+  const sectionRef = useRef(null);
 
   return (
-    <section id="parcours" className="py-10">
+    <section ref={sectionRef} id="parcours" className="py-10">
       <div className="flex justify-center items-center py-5">
         <h1 className="title-primary">Parcours</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="3em" height="3em" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M2.2 10.4c-.6-.3-.6-1.1 0-1.4l9.1-4.8c.4-.2.9-.2 1.4 0l9.1 4.8c.6.3.6 1.1 0 1.4l-9.1 4.8c-.4.2-.9.2-1.4 0z" />
-        <path d="M6 12.5v4c0 2.2 2.7 4 6 4s6-1.8 6-4v-4" />
-        <path d="M21 10.8v6" />
-      </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="3em" height="3em" fill="none" stroke="currentColor" strokeWidth="0.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M2.2 10.4c-.6-.3-.6-1.1 0-1.4l9.1-4.8c.4-.2.9-.2 1.4 0l9.1 4.8c.6.3.6 1.1 0 1.4l-9.1 4.8c-.4.2-.9.2-1.4 0z" />
+          <path d="M6 12.5v4c0 2.2 2.7 4 6 4s6-1.8 6-4v-4" />
+          <path d="M21 10.8v6" />
+        </svg>
       </div>
 
-      <div ref={containerRef} className="relative w-11/12 max-w-[1500px] mx-auto">
-        <div className="absolute left-1/2 -translate-x-1/2 top-6 -bottom-300 w-1 bg-gray-200 z-0" />
-        <motion.div 
-          style={{ scaleY, transformOrigin: "top" }}
-          className="absolute left-1/2 -translate-x-1/2 top-6 -bottom-300 w-1 bg-purple-600 shadow-[0_0_12px_#9333ea] z-10"
-        />
+      <div className="relative w-11/12 max-w-[1500px] mx-auto">
+
         <ElementParcours 
           titre="Lycée Marcel callo" 
           dates="2019 - 2022"

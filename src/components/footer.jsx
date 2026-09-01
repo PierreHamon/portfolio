@@ -7,7 +7,7 @@ import ElementList from "./ElementList"
 function Footer() {
   return (
     <>
-    <footer className="bg-grey-bg mt-30">
+    <footer className="bg-background-second mt-30">
         <div className="flex flex-row justify-between mx-70 pt-7 pb-15">{/* Navigation */}
           <div>
             <h3 className="text-3xl font-serif-display mb-2">Navigation</h3>

@@ -32,7 +32,7 @@ function App() {
   });
 
   return (
-    <div className="relative min-h-screen w-full bg-brand-bg text-slate-900 overflow-x-hidden">
+    <div className="relative min-h-screen w-full bg-background text-slate-900 overflow-x-hidden">
       {/* Bouton retour en haut */}
       <button 
         type="button" 

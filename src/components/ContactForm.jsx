@@ -69,7 +69,7 @@ export default function ContactForm() {
               strokeWidth="2.5" 
               strokeLinecap="round" 
               strokeLinejoin="round"
-              className="w-6 h-6"
+              className="w-6 h-6 shrink-0 text-text"
             >
               <circle cx="15" cy="15" r="12" />
               <path d="M19 11l-8 8" />
@@ -104,7 +104,7 @@ export default function ContactForm() {
               strokeWidth="2.5" 
               strokeLinecap="round" 
               strokeLinejoin="round"
-              className="w-6 h-6"
+              className="w-6 h-6 shrink-0 text-text"
             >
               <circle cx="15" cy="15" r="12" />
               <path d="M19 11l-8 8" />
@@ -139,7 +139,7 @@ export default function ContactForm() {
               strokeWidth="2.5" 
               strokeLinecap="round" 
               strokeLinejoin="round"
-              className="w-6 h-6"
+              className="w-6 h-6 shrink-0 text-text"
             >
               <circle cx="15" cy="15" r="12" />
               <path d="M19 11l-8 8" />

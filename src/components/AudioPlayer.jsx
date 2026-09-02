@@ -9,7 +9,7 @@ import deux_mille_cover from "./../assets/images/2001_cover.jpg"
 import freak_cover from "./../assets/images/freak_cover.jpg"
 import journey_cover from "./../assets/images/pluto_cover.webp"
 
-function AudioPlayer({ audioUrls = [amireal,deux_mille,freak,journey], titles = ["AM I REAL ?","2001","FREAK MONSTER","Journet to Pluto"],
+function AudioPlayer({ audioUrls = [amireal,deux_mille,freak,journey], titles = ["AM I REAL ?","2001","FREAK MONSTER","Journey to Pluto"],
                        covers = [amireal_cover,deux_mille_cover,freak_cover,journey_cover] }) {
     const containerRef = useRef(null);
     const wavesurfer = useRef(null);

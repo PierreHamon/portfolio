@@ -16,7 +16,7 @@
 }
 
 @theme {
-  /* Ici, tu dis à Tailwind : crée la classe font-serif-display */
+  /* Définition des polices et couleur */
   --font-serif-display: 'DM Serif Display', serif;
   --font-space-grotesk: 'Space Grotesk', sans-serif;
   --font-open-sans: 'Open Sans', sans-serif;
@@ -37,8 +37,13 @@
   --color-purple-second: #7F5AF0;
   --color-blue-second: #012F6E;
   --color-border: #3d3d3d;
-  --color-text: ##F8FAFC;
+  --color-text: #F8FAFC;
 }
+
+h1, h2, p, nav, a, button{
+  color: var(--color-text);
+}
+
 
 @layer components {
   .title-primary {
@@ -88,11 +93,7 @@ html {
   overflow-x: hidden
 }
 
-body {
-    @apply bg-neutral-100;
-}
-
-/* Animation et styles du Dark Mode Switcher */
+/* Animation et styles du bouton pour changer Dark/Light mode */
 :root {
   --gray-5:#010101;
   --gray-25:#141516;

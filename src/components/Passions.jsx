@@ -60,7 +60,7 @@ function Passions(props) {
         <section id="passions" className="relative z-10">
             <div className="flex justify-center items-center">
                 <h1 className="title-primary">Passions</h1>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="3em" height="3em" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="3em" height="3em" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" className='text-text'>
                     <rect x="3.5" y="10.5" width="17" height="9.5" rx="2" />
                     <path d="M3.5 10.5 L3.2 6.8 C3.1 5.7 3.9 4.8 5 4.6 L18.2 2.3 C19.3 2.1 20.3 2.9 20.5 4 L20.8 5.8 C21 6.9 20.2 7.9 19.1 8.1 L3.5 10.5 Z" />
                     <line x1="8.5" y1="9.7" x2="10" y2="3.8" />

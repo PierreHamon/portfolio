@@ -31,7 +31,7 @@ function Competences() {
             strokeWidth="0.5" 
             strokeLinecap="round" 
             strokeLinejoin="round" 
-            className="lucide lucide-briefcase-custom shrink-0">
+            className="shrink-0 text-text">
                 <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
                 <rect width="20" height="14" x="2" y="6" rx="3" />
                 <path d="M2 11s4 4 10 4 10-4 10-4" />

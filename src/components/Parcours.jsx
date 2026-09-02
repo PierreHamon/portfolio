@@ -13,7 +13,7 @@ function Parcours() {
     <section ref={sectionRef} id="parcours" className="py-10">
       <div className="flex justify-center items-center py-5">
         <h1 className="title-primary">Parcours</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="3em" height="3em" fill="none" stroke="currentColor" strokeWidth="0.5" strokeLinecap="round" strokeLinejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="3em" height="3em" fill="none" stroke="currentColor" strokeWidth="0.5" strokeLinecap="round" strokeLinejoin="round" className='text-text'>
           <path d="M2.2 10.4c-.6-.3-.6-1.1 0-1.4l9.1-4.8c.4-.2.9-.2 1.4 0l9.1 4.8c.6.3.6 1.1 0 1.4l-9.1 4.8c-.4.2-.9.2-1.4 0z" />
           <path d="M6 12.5v4c0 2.2 2.7 4 6 4s6-1.8 6-4v-4" />
           <path d="M21 10.8v6" />

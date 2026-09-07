@@ -15,12 +15,12 @@ function EspaceProjet(props) {
     };
   return (
     <>    
-    <div className={`flex px-20 py-10 ${props.inverse ? 'flex-row-reverse' : ''}`}>
-        <motion.div {...(props.inverse ? slideLeft : slideRight)} className="flex flex-col items-center w-1/2 mx-10">
-            <h2 className="font-serif-display text-4xl">
+    <div className={`items-center flex flex-col py-10 ${props.inverse ? 'md:flex-row-reverse' : 'md:flex-row'}`}>
+        <motion.div {...(props.inverse ? slideLeft : slideRight)} className="flex flex-col items-center md:w-1/2 mx-10">
+            <h2 className="font-serif-display text-4xl text-center">
                 {props.titre}
             </h2>
-            <h3 className="font-space-grotesk text-xl text-purple-second font-bold">
+            <h3 className="font-space-grotesk text-xl text-purple-second font-bold text-center">
                 {props.soustitre}
             </h3>
             <p className="font-open-sans text-lg text-justify">
@@ -33,10 +33,9 @@ function EspaceProjet(props) {
                     </div>
                 ))} 
             </div>
-            
-            
         </motion.div>
-        <motion.div {...(props.inverse ? slideRight : slideLeft)} className='border-projets me-10 overflow-hidden h-120'>
+        <motion.img {...(props.inverse ? slideRight : slideLeft)} src={props.imageprojet} alt="screen du puissance 4 automatique dans le terminal" className={`md:hidden ${props.fullscreen ? 'w-full' : 'h-full'} object-cover mt-5`}/>
+        <motion.div {...(props.inverse ? slideRight : slideLeft)} className={`hidden md:flex border-projets ${props.inverse ? 'ms-10' : 'me-10'} overflow-hidden h-120`}>
             <img src={props.imageprojet} alt="screen du puissance 4 automatique dans le terminal" className={`${props.fullscreen ? 'w-full' : 'h-full'} object-cover`}/>
         </motion.div>
     </div>

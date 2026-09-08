@@ -43,7 +43,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={onSubmit} className='flex flex-col'>
+    <form onSubmit={onSubmit} className='flex flex-col w-[90%] md:w-[70%]'>
       {/* Champ NOM */}
       <div className='relative'>
         <input 
@@ -154,7 +154,7 @@ export default function ContactForm() {
         <textarea name="message" required placeholder="Message" className='formulaire-input h-50'></textarea>
       </div>
 
-      <button type="submit" className='bg-purple-second px-15 py-3 rounded-md my-7 mx-70 font-open-sans text-white font-bold text-lg cursor-pointer'>
+      <button type="submit" className='bg-purple-second md:w-full px-15 py-3 rounded-md my-7 font-open-sans text-white font-bold text-lg cursor-pointer'>
         Envoyer
       </button>
       <p>{result}</p>

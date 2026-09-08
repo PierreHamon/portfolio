@@ -20,7 +20,7 @@ function CV() {
                     <path d="M6 20a6 6 0 0 1 12 0" />
                 </svg>
             </div>
-            <motion.img {...Fade} src={img_cv} alt="image de mon CV" className="w-[40%] z-20"/>
+            <motion.img {...Fade} src={img_cv} alt="image de mon CV" className="w-[90%] md:w-[40%] z-20"/>
             <a href="/CV_generaliste.pdf" download="CV_Pierre_Hamon.pdf" className="bg-purple-second px-15 py-1 rounded-md my-7">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="2.5em" height="2.5em" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="12" y1="4" x2="12" y2="15" />

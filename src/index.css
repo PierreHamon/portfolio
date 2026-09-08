@@ -71,7 +71,7 @@ h1, h2, p, nav, a, button{
 
 @layer components {
   .formulaire-input {
-    @apply bg-white rounded-xs text-sm my-2 p-2 pb-6 w-7xl border-b-2 border-background-second;
+    @apply bg-white rounded-xs text-sm my-2 p-2 pb-6 w-full border-b-2 border-background-second;
   }
 }
 

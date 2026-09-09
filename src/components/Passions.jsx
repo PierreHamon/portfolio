@@ -69,7 +69,7 @@ function Passions(props) {
 
 
             </div>
-            <h2 className='font-serif-display text-4xl relative z-20 m-5'>Cinéma</h2>
+            <h2 className='title-passions'>Cinéma</h2>
             <div className='w-full relative h-[1200px] md:h-[1000px]'>
                 <motion.img {...slideDown()} src={angelsegg} alt="affiche film" className='absolute left-0 top-5 w-70 md:left-220 md:top-3 md:w-150 z-20 bg-white'/>
                 <motion.img {...slideLeft()} src={belladonna} alt="affiche film" className='absolute right-0 top-60 w-55 md:left-320 md:top-150 md:w-120 z-20 bg-white'/>
@@ -81,7 +81,7 @@ function Passions(props) {
                 <motion.img {...slideRight()} src={blood} alt="affiche film" className='absolute top-220 left-5 w-40 md:left-400 md:top-10 md:w-70 z-17 bg-white'/>
                 <motion.img {...slideLeft()} src={lucioles} alt="affiche film" className='absolute top-240 right-5 w-40 md:left-10 md:top-10 md:w-80 z-20 bg-white'/>
             </div>
-            <h2 className='flex font-serif-display text-4xl justify-end z-20 m-5'>Montage vidéo</h2>
+            <h2 className='title-passions justify-end'>Montage vidéo</h2>
             <div className="flex flex-col md:flex-row w-9/10 h-auto rounded-xl mx-auto my-7 md:my-20 justify-center gap-5">
                 <motion.div {...slideRight()} className="flex-1 aspect-video rounded-xl overflow-hidden shadow-lg">
                     <iframe
@@ -111,7 +111,7 @@ function Passions(props) {
                     ></iframe>
                 </motion.div>
             </div>
-            <h2 className='flex font-serif-display text-4xl justify-start z-20 m-5'>Création musicale</h2>
+            <h2 className='title-passions'>Création musicale</h2>
             <div className="relative w-full ">
                 <div className='flex flex-col justify-center items-center opacity-65'>
                     <motion.img {...slideLeft(0.6)} src={fl1} alt="affiche film" className='h-20 md:w-[94%] z-20'/>
@@ -133,10 +133,10 @@ function Passions(props) {
 
             
 
-            <h2 className='flex font-serif-display text-4xl justify-end z-20 m-5'>Littérature</h2>
-            <div className='w-full relative h-[1050px] md:h-[1000px]'>
+            <h2 className='title-passions justify-end'>Littérature</h2>
+            <div className='w-full relative h-[1050px] md:h-[1200px]'>
                 <motion.img {...slideLeft(0.6)} src={lotr} alt="affiche film" className='absolute left-5 w-60 md:left-[62%] md:top-[2%] md:w-150 z-20 bg-white'/>
-                <motion.img {...slideLeft(0.4)} src={berserk} alt="affiche film" className='absolute top-180 right-2 w-55 md:left-[43%] md:top-[20%] md:w-105 z-20 bg-white'/>
+                <motion.img {...slideLeft(0.4)} src={berserk} alt="affiche film" className='absolute top-180 right-2 w-55 md:left-[43%] md:top-[15%] md:w-105 z-20 bg-white'/>
                 <motion.img {...slideLeft(0.2)} src={dune} alt="affiche film" className='absolute top-110 left-10 w-55 md:left-[17%] md:w-120 z-20 bg-white'/>
                 <motion.img {...slideLeft()} src={jojo} alt="affiche film" className='absolute top-45 right-5 w-50 md:left-[2%] md:top-[4%] md:w-90 z-20 bg-white'/>
             

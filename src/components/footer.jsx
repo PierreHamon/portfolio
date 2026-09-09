@@ -8,10 +8,10 @@ function Footer() {
   return (
     <>
     <footer className="bg-background-second mt-30">
-        <div className="flex flex-row justify-between mx-70 pt-7 pb-15">{/* Navigation */}
-          <div>
+        <div className="flex flex-col md:flex-row justify-center md:justify-between md:mx-70 pt-7 pb-15">{/* Navigation */}
+          <div className="flex flex-col items-center md:items-baseline mb-5 md:mb-0">
             <h3 className="text-3xl font-serif-display mb-2">Navigation</h3>
-            <div className="flex flex-row">
+            <div className="flex">
               <ul className="me-5">
                 <ElementList name="Accueil" />
                 <ElementList name="Présentation" />

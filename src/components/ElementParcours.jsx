@@ -38,10 +38,10 @@ function ElementParcours(props) {
             >
                 <div className="flex-1">
                     <div className="flex items-center flex-col md:flex-row items-baseline gap-2 mb-2">
-                        <h2 className="font-serif-display text-3xl font-bold">{props.titre}</h2>
+                        <h2 className="font-serif-display text-2xl md:text-3xl font-bold">{props.titre}</h2>
                         <span className="font-open-sans font-semibold text-gray-500 text-sm">{props.dates}</span>
                     </div>
-                    <h3 className="text-center md:text-start font-space-grotesk text-lg text-purple-second font-bold mb-2">
+                    <h3 className="text-center md:text-start font-space-grotesk text-lg md:text-xl text-purple-second font-bold mb-2">
                         {props.sousTitre}
                     </h3>
                     <p className="font-open-sans text-base text-justify leading-relaxed">
@@ -60,7 +60,7 @@ function ElementParcours(props) {
                 className="hidden md:block timeline-point absolute left-1/2 -translate-x-1/2 z-20 bg-purple-600 rounded-full w-4 h-4"
             />
 
-            {/* ESPACE VIDE EN FACE (même largeur que la carte) */}
+            {/* Espace vide de l'autre côté de la timeline (même largeur que la carte) */}
             <div className="hidden md:block w-[48%]"></div>
         </div>
     );

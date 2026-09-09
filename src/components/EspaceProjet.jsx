@@ -17,10 +17,10 @@ function EspaceProjet(props) {
     <>    
     <div className={`items-center flex flex-col py-10 ${props.inverse ? 'md:flex-row-reverse' : 'md:flex-row'}`}>
         <motion.div {...(props.inverse ? slideLeft : slideRight)} className="flex flex-col items-center md:w-1/2 mx-10">
-            <h2 className="font-serif-display text-4xl text-center">
+            <h2 className="font-serif-display text-2xl md:text-4xl text-center">
                 {props.titre}
             </h2>
-            <h3 className="font-space-grotesk text-xl text-purple-second font-bold text-center">
+            <h3 className="font-space-grotesk text-xl md:text-2xl text-purple-second font-bold text-center">
                 {props.soustitre}
             </h3>
             <p className="font-open-sans text-lg text-justify">

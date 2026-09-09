@@ -47,7 +47,13 @@ h1, h2, p, nav, a, button{
 
 @layer components {
   .title-primary {
-    @apply font-serif-display text-5xl pe-2 text-black;
+    @apply font-serif-display text-3xl md:text-5xl pe-2 text-black;
+  }
+}
+
+@layer components {
+  .title-passions {
+    @apply flex font-serif-display text-2xl md:text-4xl relative z-20 m-5;
   }
 }
 

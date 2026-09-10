@@ -18,7 +18,7 @@ import JavaFX from './../assets/icons/javafx_logo.png'
 function Competences() {
   return (
     <>
-    <section id="competences" className="flex flex-col max-w-7xl mx-auto pt-7 scroll-m-[50vh]">
+    <section id="competences" className="flex flex-col max-w-7xl mx-auto pt-7 scroll-m-[20vh]">
         <div className="flex flex-row items-center justify-center pb-5">
             <h1 className="title-primary">Compétences</h1>
             <svg 

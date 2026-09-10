@@ -26,7 +26,6 @@ function AboutMe() {
             de l'IUT de Lannion réalisé <span className="highlight-words">en alternance</span> au Centre Informatique de Lamballe. J'ai pris une année
             sabatique en 2025 pour découvrir le monde et moi-même en voyageant, faisant des <span className="highlight-words">dizaines de projets</span> dans différents domaines.
         </p>
-        
     </section>
     </>
   )

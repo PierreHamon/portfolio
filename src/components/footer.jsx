@@ -7,9 +7,9 @@ import ElementList from "./ElementList"
 function Footer() {
   return (
     <>
-    <footer className="bg-background-second mt-30">
+    <footer className="bg-background-second mt-10 md:mt-30">
         <div className="flex flex-col md:flex-row justify-center md:justify-between md:mx-70 pt-7 pb-15">{/* Navigation */}
-          <div className="flex flex-col items-center md:items-baseline mb-5 md:mb-0">
+          <div className="hidden md:items-baseline mb-5 md:mb-0">
             <h3 className="text-3xl font-serif-display mb-2">Navigation</h3>
             <div className="flex">
               <ul className="me-5">
@@ -27,7 +27,7 @@ function Footer() {
             </div>
           </div>
           <div className="flex flex-col items-center">{/* Réseaux */}
-            <h3 className="text-3xl font-serif-display mb-2">Réseaux</h3>
+            <h3 className="text-3xl font-serif-display text-text mb-2">Réseaux</h3>
             <div className="flex flex-row items-center gap-2">
               <a href="https://github.com/PierreHamon" target="_blank" rel="noopener noreferrer"><img src={GitHub_logo} alt="logo github" className="w-12.5"/></a>
               <a href="https://www.linkedin.com/in/pierre-hamon-62059a269/" target="_blank" rel="noopener noreferrer"><img src={Linkedin_logo} alt="logo github" className="w-12.5"/></a>

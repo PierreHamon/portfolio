@@ -8,7 +8,9 @@ function Header() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const [isDark, setIsDark] = useState(() => {
+  {/* Desactivé temporairement pour la mise en ligne développement en cours */}
+  {/*
+    const [isDark, setIsDark] = useState(() => {
     if (typeof window !== 'undefined') {
       const savedTheme = localStorage.getItem('theme');
       if (savedTheme) return savedTheme === 'dark';
@@ -16,19 +18,20 @@ function Header() {
     }
     return false;
   });
+    useEffect(() => {
+      const root = document.documentElement;
 
-  // Synchronisation uniquement avec la classe HTML et le LocalStorage
-  useEffect(() => {
-    const root = document.documentElement;
+      if (isDark) {
+        root.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        root.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      }
+    }, [isDark]);
+  */}
 
-    if (isDark) {
-      root.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      root.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    }
-  }, [isDark]);
+ 
 
   return (
     <header id="header" className="flex items-center justify-between font-open-sans font-bold w-full mt-0 md:mt-5 relative ">
@@ -44,8 +47,8 @@ function Header() {
         <a href="#contact" className="hover:bg-grey-bg hover:text-purple-second p-2 px-5">Contact</a>
       </nav>
 
-      <div className="fixed border-b-1 border-border md:border-0 md:relative top-0 py-2 md:py-0 flex flex-row w-full bg-background md:w-auto justify-between z-50">
-        <a onClick={(e) => {
+      <div className="fixed border-b-1 border-border md:border-0 md:relative top-0 py-2 flex flex-row w-full bg-background md:w-auto justify-end z-50">
+        {/*<a onClick={(e) => {
           e.preventDefault(); // Empêche la page de remonter tout en haut
           setIsDark(!isDark);
           }}
@@ -72,7 +75,7 @@ function Header() {
             <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
           </svg>
         )}
-        </a>
+        </a>*/}
         <i className="flex md:hidden p-2 px-5 mx-6 text-text"
            onClick={() => SetIsMenuOpen(!isMenuOpen)}>
           <svg 
@@ -92,14 +95,14 @@ function Header() {
           </svg>
         </i>
         
-        <div className={`fixed md:hidden top-17 py-5 left-0 w-full bg-background flex flex-col items-center
+        <div className={`fixed md:hidden top-15 py-5 left-0 w-full bg-background flex flex-col items-center
             transform transition-transform
             ${isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
           <ul className="flex flex-col items-start gap-6">
             <li className="flex flex-row">
               <a className="flex flex-row gap-2"
                  onClick={() => {
-                  scrollToTop;
+                  scrollToTop();
                   SetIsMenuOpen(!isMenuOpen)
                  }}>
                 <svg 

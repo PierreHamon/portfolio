@@ -1,4 +1,4 @@
-import photoMoi from './../assets/images/photo_portfolio.jpg';
+import photoMoi from './../assets/images/photo_profil.jpeg';
 
 function Hero() {
   return (

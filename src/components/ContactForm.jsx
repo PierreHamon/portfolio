@@ -33,7 +33,7 @@ export default function ContactForm() {
 
     const resData = await response.json();
     if (resData.success) {
-      setResult("Success!");
+      setResult("Votre message a été envoyé avec succès !");
       // Réinitialise les états et le formulaire après envoi
       setFormData({ name: "", email: "", subject: "" });
       event.target.reset();
@@ -53,7 +53,7 @@ export default function ContactForm() {
           placeholder="Nom" 
           value={formData.name}
           onChange={handleChange}
-          className='formulaire-input pr-10'
+          className='formulaire-input pr-10 text-base '
         />
         {formData.name && (
           <button
@@ -69,7 +69,7 @@ export default function ContactForm() {
               strokeWidth="2.5" 
               strokeLinecap="round" 
               strokeLinejoin="round"
-              className="w-6 h-6 shrink-0 text-text"
+              className="w-6 h-6 shrink-0 text-text text-base"
             >
               <circle cx="15" cy="15" r="12" />
               <path d="M19 11l-8 8" />
@@ -88,7 +88,7 @@ export default function ContactForm() {
           placeholder="Email" 
           value={formData.email}
           onChange={handleChange}
-          className='formulaire-input pr-10'
+          className='formulaire-input pr-10 text-base'
         />
         {formData.email && (
           <button
@@ -123,7 +123,7 @@ export default function ContactForm() {
           placeholder="Sujet" 
           value={formData.subject}
           onChange={handleChange}
-          className='formulaire-input pr-10'
+          className='formulaire-input pr-10 text-base'
         />
         {formData.subject && (
           <button
@@ -151,13 +151,14 @@ export default function ContactForm() {
 
       {/* Champ MESSAGE */}
       <div>
-        <textarea name="message" required placeholder="Message" className='formulaire-input h-50'></textarea>
+        <textarea name="message" required placeholder="Message" className='formulaire-input h-50 text-base'></textarea>
       </div>
-
-      <button type="submit" className='bg-purple-second md:w-full px-15 py-3 rounded-md my-7 font-open-sans font-bold text-lg cursor-pointer'>
+      <p className='flex justify-center text-green-600'>{result}</p>
+      {/* Utilisation du dark: car exeption dans la règles des couleurs textuelles */}
+      <button type="submit" className='bg-purple-second !text-slate-50 dark:text-slate-900 md:w-full px-15 py-3 rounded-md my-7 font-open-sans font-bold text-lg cursor-pointer'>
         Envoyer
       </button>
-      <p>{result}</p>
+      
     </form>
   );
 }

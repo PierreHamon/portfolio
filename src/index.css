@@ -40,8 +40,10 @@
   --color-text: #F8FAFC;
 }
 
-h1, h2, p, nav, a, button{
-  color: var(--color-text);
+@layer base {
+  h1, h2, p, nav, a, button {
+    color: var(--color-text);
+  }
 }
 
 

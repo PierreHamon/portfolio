@@ -38,7 +38,7 @@ function App() {
       {/* Bouton retour en haut */}
       <button 
         type="button" 
-        className="fixed bottom-5 right-5 z-50 cursor-pointer" 
+        className="hidden md:flex fixed bottom-5 right-5 z-50 cursor-pointer" 
         onClick={scrollToTop}
         aria-label="Retour en haut"
       >

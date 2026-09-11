@@ -83,7 +83,7 @@ function Passions(props) {
             </div>
             <h2 className='title-passions justify-end'>Montage vidéo</h2>
             <div className="flex flex-col md:flex-row w-9/10 h-auto rounded-xl mx-auto my-7 md:my-20 justify-center gap-5">
-                <motion.div {...slideRight()} className="flex-1 aspect-video rounded-xl overflow-hidden shadow-lg">
+                <motion.div {...slideRight()} className="flex-1 aspect-video rounded-xl overflow-hidden shadow-lg shadow-shadow">
                     <iframe
                         className="w-full h-full border-0"
                         src="https://www.youtube.com/embed/U2LM3MxTas8"
@@ -92,7 +92,7 @@ function Passions(props) {
                         allowFullScreen
                     ></iframe>
                 </motion.div>
-                <motion.div {...Fade} className="flex-1 aspect-video rounded-xl overflow-hidden shadow-lg">
+                <motion.div {...Fade} className="flex-1 aspect-video rounded-xl overflow-hidden shadow-lg shadow-shadow">
                     <iframe
                         className="w-full h-full border-0"
                         src="https://www.youtube.com/embed/cXeQRNSgOxM"
@@ -101,7 +101,7 @@ function Passions(props) {
                         allowFullScreen
                     ></iframe>
                 </motion.div>
-                <motion.div {...slideLeft()} className="flex-1 aspect-video rounded-xl overflow-hidden shadow-lg">
+                <motion.div {...slideLeft()} className="flex-1 aspect-video rounded-xl overflow-hidden shadow-lg shadow-shadow">
                     <iframe
                         className="w-full h-full border-0"
                         src="https://www.youtube.com/embed/mJSJxDf4yxs"

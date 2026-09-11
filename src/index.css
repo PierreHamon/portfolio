@@ -27,6 +27,7 @@
   --color-blue-second: #012F6E;
   --color-border: #CFCFCF;
   --color-text: #0F172A;
+  --color-shadow: #0F172A26;
 }
 
 /* Couleurs du dark mode */
@@ -38,6 +39,7 @@
   --color-blue-second: #012F6E;
   --color-border: #3d3d3d;
   --color-text: #F8FAFC;
+  --color-shadow: #FFFFFF1A;
 }
 
 @layer base {
@@ -49,7 +51,7 @@
 
 @layer components {
   .title-primary {
-    @apply font-serif-display text-3xl md:text-5xl pe-2 text-black;
+    @apply font-serif-display text-3xl md:text-5xl pe-2 text-text;
   }
 }
 

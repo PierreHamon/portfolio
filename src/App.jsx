@@ -57,12 +57,12 @@ function App() {
       <div ref={timelineContainerRef} className="relative">
         
         {/* Ligne grise de fond (traverse Parcours, Passions, CV, etc.) */}
-        <div className="absolute left-1/2 -translate-x-1/2 top-32 bottom-10 w-1 bg-gray-200 z-0" />
+        <div className="absolute left-1/2 -translate-x-1/2 top-24 bottom-10 w-1 bg-gray-200 z-0" />
         
         {/* Ligne violette animée */}
         <motion.div 
           style={{ scaleY, transformOrigin: "top" }}
-          className="absolute left-1/2 -translate-x-1/2 top-32 bottom-10 w-1 bg-purple-600 shadow-[0_0_12px_#9333ea] z-10"
+          className="absolute left-1/2 -translate-x-1/2 top-24 bottom-10 w-1 bg-purple-600 shadow-[0_0_12px_#9333ea] z-10"
         />
 
         {/* Composants traversés par la ligne */}

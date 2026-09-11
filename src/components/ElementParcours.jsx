@@ -34,7 +34,7 @@ function ElementParcours(props) {
         <div ref={elementRef} className={`relative flex justify-center items-center my-10 w-full gap-35 ${props.reverse ? 'flex-row-reverse' : 'flex-row'}`}>
             <motion.div 
                 {...(props.reverse ? slideLeft : slideRight)} 
-                className={`w-[95%] md:w-[48%] flex flex-col md:flex-row bg-white rounded-xl p-6 gap-6 items-center z-20 shadow-md`}
+                className={`w-[95%] md:w-[48%] flex flex-col md:flex-row bg-background rounded-xl p-6 gap-6 items-center z-20 shadow-md shadow-shadow`}
             >
                 <div className="flex-1">
                     <div className="flex items-center flex-col md:flex-row items-baseline gap-2 mb-2">

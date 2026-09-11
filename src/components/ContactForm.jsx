@@ -53,7 +53,7 @@ export default function ContactForm() {
           placeholder="Nom" 
           value={formData.name}
           onChange={handleChange}
-          className='formulaire-input pr-10 text-base '
+          className='formulaire-input pr-10 text-base'
         />
         {formData.name && (
           <button

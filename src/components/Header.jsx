@@ -7,9 +7,6 @@ function Header() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-
-  {/* Desactivé temporairement pour la mise en ligne développement en cours */}
-  {/*
     const [isDark, setIsDark] = useState(() => {
     if (typeof window !== 'undefined') {
       const savedTheme = localStorage.getItem('theme');
@@ -29,7 +26,6 @@ function Header() {
         localStorage.setItem('theme', 'light');
       }
     }, [isDark]);
-  */}
 
  
 
@@ -47,8 +43,8 @@ function Header() {
         <a href="#contact" className="hover:bg-grey-bg hover:text-purple-second p-2 px-5">Contact</a>
       </nav>
 
-      <div className="fixed border-b-1 border-border md:border-0 md:relative top-0 py-2 flex flex-row w-full bg-background md:w-auto justify-end z-50">
-        {/*<a onClick={(e) => {
+      <div className="fixed border-b-1 border-border md:border-0 md:relative top-0 py-2 flex flex-row w-full bg-background md:w-auto justify-between z-50">
+        <a onClick={(e) => {
           e.preventDefault(); // Empêche la page de remonter tout en haut
           setIsDark(!isDark);
           }}
@@ -75,7 +71,7 @@ function Header() {
             <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
           </svg>
         )}
-        </a>*/}
+        </a>
         <i className="flex md:hidden p-2 px-5 mx-6 text-text"
            onClick={() => SetIsMenuOpen(!isMenuOpen)}>
           <svg 

@@ -15,7 +15,7 @@ function EspaceProjet(props) {
     };
   return (
     <>    
-    <div className={`items-center flex flex-col py-10 ${props.inverse ? 'md:flex-row-reverse' : 'md:flex-row'}`}>
+    <div className={`items-center flex flex-col pb-10 ${props.inverse ? 'md:flex-row-reverse' : 'md:flex-row'}`}>
         <motion.div {...(props.inverse ? slideLeft : slideRight)} className="flex flex-col items-center md:w-1/2 mx-10">
             <h2 className="font-serif-display text-2xl md:text-4xl text-center">
                 {props.titre}

@@ -93,14 +93,14 @@ function AudioPlayer({ audioUrls = [amireal,deux_mille,freak,journey], titles = 
     };
 
     return (
-        <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 w-[95%] md:w-[50%] mx-auto my-6">
+        <div className="bg-background p-6 rounded-xl shadow-lg border border-gray-100 w-[95%] md:w-[50%] mx-auto my-6">
             
             {/* Header avec Titre, Pochette et Compteur */}
             <div className="flex flex-col items-center gap-3 mb-6">
                 <span className="text-xs font-semibold uppercase tracking-wider text-purple-600 bg-purple-50 px-3 py-1 rounded-full">
                     Son {currentIndex + 1} / {audioUrls.length}
                 </span>
-                <h4 className="font-serif-display text-2xl font-bold text-gray-800 text-center">
+                <h4 className="font-serif-display text-2xl font-bold text-text text-center">
                     {currentTitle}
                 </h4>
                 {currentCover && (

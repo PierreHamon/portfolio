@@ -57,7 +57,7 @@ function Passions(props) {
 
   return (
     <>
-        <section id="passions" className="relative z-10">
+        <section id="passions" className="relative z-10 scroll-m-[10vh] md:scroll-m-[0vh]">
             <div className="flex justify-center items-center">
                 <h1 className="title-primary">Passions</h1>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="3em" height="3em" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" className='text-text'>

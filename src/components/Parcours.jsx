@@ -10,7 +10,7 @@ function Parcours() {
   const sectionRef = useRef(null);
 
   return (
-    <section ref={sectionRef} id="parcours" className="py-10">
+    <section ref={sectionRef} id="parcours" className="py-10 scroll-m-[2vh] md:scroll-m-[0vh]">
       <div className="flex justify-center items-center py-5">
         <h1 className="title-primary">Parcours</h1>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="3em" height="3em" fill="none" stroke="currentColor" strokeWidth="0.5" strokeLinecap="round" strokeLinejoin="round" className='text-text'>

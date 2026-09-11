@@ -3,7 +3,7 @@ import ContactForm from "./ContactForm"
 function Contact() {
   return (
     <>
-    <div id="contact" className="flex justify-center items-center py-5">
+    <div id="contact" className="flex justify-center items-center py-5 scroll-m-[7vh] md:scroll-m-[0vh]">
         <h1 className="title-primary">Contact</h1>
         <svg xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"

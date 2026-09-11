@@ -10,7 +10,7 @@ function CV() {
     };
   return (
     <>
-        <section id="curriculum vitae" className="flex flex-col items-center ">
+        <section id="curriculum vitae" className="flex flex-col items-center scroll-mt-[7vh] md:scroll-mt-[0vh]">
             <div className="flex justify-center items-center py-5">
                 <h1 className="title-primary z-20">Curriculum vitae</h1>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="3em" height="3em" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" className='shrink-0 text-text'>

@@ -154,7 +154,7 @@ export default function ContactForm() {
         <textarea name="message" required placeholder="Message" className='formulaire-input h-50'></textarea>
       </div>
 
-      <button type="submit" className='bg-purple-second md:w-full px-15 py-3 rounded-md my-7 font-open-sans text-white font-bold text-lg cursor-pointer'>
+      <button type="submit" className='bg-purple-second md:w-full px-15 py-3 rounded-md my-7 font-open-sans font-bold text-lg cursor-pointer'>
         Envoyer
       </button>
       <p>{result}</p>

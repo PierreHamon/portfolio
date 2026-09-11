@@ -88,7 +88,7 @@ function Projets() {
     };
   return (
     <>
-    <section id="projets">
+    <section id="projets" className='scroll-mt-[7vh] md:scroll-mt-[0vh]'>
         <div className="flex justify-center items-center py-5 ">
             <h1 className="title-primary">Projets</h1>
             <svg 

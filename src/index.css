@@ -28,6 +28,8 @@
   --color-border: #CFCFCF;
   --color-text: #0F172A;
   --color-shadow: #0F172A26;
+  --color-text-contact: #78716C;
+  --color-bg-contact: #FFFFFF;
 }
 
 /* Couleurs du dark mode */
@@ -40,6 +42,8 @@
   --color-border: #3d3d3d;
   --color-text: #F8FAFC;
   --color-shadow: #FFFFFF1A;
+  --color-text-contact: #78716c;
+  --color-bg-contact: #1e293b;
 }
 
 @layer base {

@@ -43,7 +43,7 @@ function Header() {
         <a href="#contact" className="hover:bg-grey-bg hover:text-purple-second p-2 px-5">Contact</a>
       </nav>
 
-      <div className="fixed border-b-1 border-border md:border-0 md:relative top-0 py-2 flex flex-row w-full bg-background md:w-auto justify-between z-50">
+      <div className="fixed border-b-1 border-border md:border-0 md:relative top-0 py-2 flex flex-row w-full bg-background md:w-auto justify-between cursor-pointer z-50">
         <a onClick={(e) => {
           e.preventDefault(); // Empêche la page de remonter tout en haut
           setIsDark(!isDark);

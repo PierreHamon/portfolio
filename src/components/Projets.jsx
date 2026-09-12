@@ -1,11 +1,11 @@
-import p4screen from './../assets/images/puissance4_screen.avif'; 
+import p4screen from './../assets/images/puissance4_screen.png'; 
 import EspaceProjet from './EspaceProjet';
 import cil_projet from './../assets/images/cil_project.avif';
 import transmusicales_projet from './../assets/images/transmusicales_project.avif';
 import parcoursup_projet from './../assets/images/parcoursup_project.avif';
-import chevaux_projet from './../assets/images/chevaux_project.avif';
+import chevaux_projet from './../assets/images/chevaux_project.png';
 import location_projet from './../assets/images/location_project.avif';
-import nas_projet from './../assets/images/nas_project.webp';
+import nas_projet from './../assets/images/nas_project.png';
 import portfolio_projet from './../assets/images/portfolio_project.webp';
 
 function Projets() {

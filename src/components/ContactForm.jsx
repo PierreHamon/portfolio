@@ -53,7 +53,7 @@ export default function ContactForm() {
           placeholder="Nom" 
           value={formData.name}
           onChange={handleChange}
-          className='formulaire-input pr-10 text-base'
+          className='formulaire-input pr-10 text-base text-text bg-bg-contact placeholder:text-text'
         />
         {formData.name && (
           <button
@@ -88,7 +88,7 @@ export default function ContactForm() {
           placeholder="Email" 
           value={formData.email}
           onChange={handleChange}
-          className='formulaire-input pr-10 text-base'
+          className='formulaire-input pr-10 text-base text-text bg-bg-contact placeholder:text-text'
         />
         {formData.email && (
           <button
@@ -123,7 +123,7 @@ export default function ContactForm() {
           placeholder="Sujet" 
           value={formData.subject}
           onChange={handleChange}
-          className='formulaire-input pr-10 text-base'
+          className='formulaire-input pr-10 text-base text-text bg-bg-contact placeholder:text-text '
         />
         {formData.subject && (
           <button
@@ -151,11 +151,10 @@ export default function ContactForm() {
 
       {/* Champ MESSAGE */}
       <div>
-        <textarea name="message" required placeholder="Message" className='formulaire-input h-50 text-base'></textarea>
+        <textarea name="message" required placeholder="Message" className='formulaire-input h-50 text-base text-text bg-bg-contact placeholder:text-text'></textarea>
       </div>
       <p className='flex justify-center text-green-600'>{result}</p>
-      {/* Utilisation du dark: car exeption dans la règles des couleurs textuelles */}
-      <button type="submit" className='bg-purple-second !text-slate-50 dark:text-slate-900 md:w-full px-15 py-3 rounded-md my-7 font-open-sans font-bold text-lg cursor-pointer'>
+      <button type="submit" className='bg-purple-second text-slate-50 md:w-full px-15 py-3 rounded-md my-7 font-open-sans font-bold text-lg cursor-pointer'>
         Envoyer
       </button>
       

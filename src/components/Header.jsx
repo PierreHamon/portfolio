@@ -31,18 +31,18 @@ function Header() {
 
   return (
     <header id="header" className="flex items-center justify-between font-open-sans font-bold w-full mt-0 md:mt-5 relative ">
-      <div className="flex gap-2 ms-2 items-center bg-white-menu shadow-sm shadow-shadow rounded-lg p-2">
-            {/* Ton texte */}
-            <p className='font-open-sans me-1 text-base'>
-              V 1.0 - En cours d'amélioration
-            </p>
-            {/* Diode verte animée */}
-            <span className="relative flex h-2.5 w-2.5 shrink-0">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-blue-500 shadow-[0_0_8px_#22c55e]"></span>
-            </span>
-          </div>
-
+      <div className="fixed border-b-1 border-border md:border-0 md:relative top-0 py-2 flex flex-row w-full bg-background md:w-full justify-between cursor-pointer z-50">
+      <div className="order-2 md:order-1 flex gap-2 mx-6 items-center bg-white-menu shadow-sm shadow-shadow rounded-lg p-2">
+        {/* Ton texte */}
+        <p className='font-open-sans me-1 text-base'>
+          V 1.0 - En cours d'amélioration
+        </p>
+        {/* Diode verte animée */}
+        <span className="relative flex h-2.5 w-2.5 shrink-0">
+        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+        <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-blue-500 shadow-[0_0_8px_#22c55e]"></span>
+        </span>
+      </div>
       <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-fit bg-white-menu shadow-sm shadow-shadow rounded-lg items-center shrink-0">
         <a href="#accueil" className="hover:bg-grey-bg hover:text-purple-second p-2 px-5">Accueil</a>
         <a href="#competences" className="hover:bg-grey-bg hover:text-purple-second p-2 px-5">Compétences</a>
@@ -52,13 +52,11 @@ function Header() {
         <a href="#curriculum vitae" className="hover:bg-grey-bg hover:text-purple-second p-2 px-5">CV</a>
         <a href="#contact" className="hover:bg-grey-bg hover:text-purple-second p-2 px-5">Contact</a>
       </nav>
-
-      <div className="fixed border-b-1 border-border md:border-0 md:relative top-0 py-2 flex flex-row w-full bg-background md:w-auto justify-between cursor-pointer z-50">
         <a onClick={(e) => {
           e.preventDefault(); // Empêche la page de remonter tout en haut
           setIsDark(!isDark);
           }}
-        className="flex items-center bg-white-menu p-2 px-5 mx-6 md:shadow-sm shadow-shadow rounded-lg hover:bg-grey-bg hover:text-purple-second"
+        className="order-1 md:order-3 flex items-center bg-white-menu p-2 px-5 mx-6 md:shadow-sm shadow-shadow rounded-lg hover:bg-grey-bg hover:text-purple-second"
         >
           {isDark ? (
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -82,7 +80,7 @@ function Header() {
           </svg>
         )}
         </a>
-        <i className="flex md:hidden p-2 px-5 mx-6 text-text"
+        <i className="order-3 flex md:hidden p-2 px-5 mx-6 text-text"
            onClick={() => SetIsMenuOpen(!isMenuOpen)}>
           <svg 
             xmlns="http://www.w3.org/2000/svg" 

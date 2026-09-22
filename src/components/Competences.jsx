@@ -42,7 +42,7 @@ function Competences() {
             <BadgeCompetences nom="HTML5" logo={html5}/>
             <BadgeCompetences nom="CSS" logo={css}/>
             <BadgeCompetences nom="JavaScript" logo={Js}/>
-            <BadgeCompetences nom="Vue" logo={Vue}/>
+            <BadgeCompetences nom="React" logo={React}/>
             <BadgeCompetences nom="C" logo={C}/>
             <BadgeCompetences nom="PHP" logo={PHP}/>
             <BadgeCompetences nom="Python" logo={Python}/>
@@ -52,7 +52,6 @@ function Competences() {
             <BadgeCompetences nom="Docker" logo={Docker}/>
             <BadgeCompetences nom="RPG" logo={RPG}/>
             <BadgeCompetences nom="Java" logo={Java}/>
-            <BadgeCompetences nom="React" logo={React}/>
             <BadgeCompetences nom="JavaFX" logo={JavaFX}/>
         </div>
         

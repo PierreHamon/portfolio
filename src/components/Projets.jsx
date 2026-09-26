@@ -9,7 +9,7 @@ import nas_projet from './../assets/images/nas_project.png';
 import portfolio_projet from './../assets/images/portfolio_project.webp';
 import { useState } from 'react';
 import ProjectModal from './ProjectModal';
-import { PROJECTS_DATA } from '../data/projectsData';
+import { PROJECTS_DATA } from '../data/Data';
 
 function Projets() {
     const [selectedProject,SetSelectedProject] = useState(null);

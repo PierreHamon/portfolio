@@ -31,10 +31,10 @@ function Header() {
 
   return (
     <header id="header" className="flex items-center justify-between font-open-sans font-bold w-full mt-0 md:mt-5 relative ">
-      <div className="fixed border-b-1 border-border md:border-0 md:relative top-0 py-2 flex flex-row w-full bg-background md:w-full justify-between cursor-pointer z-50">
-      <div className="order-2 md:order-1 flex gap-2 mx-6 items-center bg-white-menu shadow-sm shadow-shadow rounded-lg p-2">
+      <div className="fixed border-b-1 border-border md:border-0 md:relative top-0 py-2 flex flex-row bg-background left-0 w-full justify-between cursor-pointer z-50">
+      <div className="order-2 md:order-1 flex gap-2 items-center md:ms-6 bg-white-menu shadow-sm shadow-shadow rounded-lg p-2">
         {/* Ton texte */}
-        <p className='font-open-sans me-1 text-base'>
+        <p className='font-open-sans me-1 text-sm'>
           V 1.0 - En cours d'amélioration
         </p>
         {/* Diode verte animée */}
@@ -56,7 +56,7 @@ function Header() {
           e.preventDefault(); // Empêche la page de remonter tout en haut
           setIsDark(!isDark);
           }}
-        className="order-1 md:order-3 flex items-center bg-white-menu p-2 px-5 mx-6 md:shadow-sm shadow-shadow rounded-lg hover:bg-grey-bg hover:text-purple-second"
+        className="order-1 md:order-3 flex items-center bg-white-menu p-2 mx-6 md:shadow-sm shadow-shadow rounded-lg hover:bg-grey-bg hover:text-purple-second"
         >
           {isDark ? (
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -80,7 +80,7 @@ function Header() {
           </svg>
         )}
         </a>
-        <i className="order-3 flex md:hidden p-2 px-5 mx-6 text-text"
+        <i className="order-3 flex items-center mx-6 md:hidden text-text"
            onClick={() => SetIsMenuOpen(!isMenuOpen)}>
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
@@ -99,7 +99,7 @@ function Header() {
           </svg>
         </i>
         
-        <div className={`fixed md:hidden top-15 py-5 left-0 w-full bg-background flex flex-col items-center
+        <div className={`fixed md:hidden top-18 py-5 left-0 w-full bg-background flex flex-col items-center
             transform transition-transform
             ${isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
           <ul className="flex flex-col items-start gap-6">

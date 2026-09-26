@@ -32,24 +32,26 @@ function ElementParcours(props) {
 
     return (
         <div ref={elementRef} className={`relative flex justify-center items-center my-10 w-full gap-35 ${props.reverse ? 'flex-row-reverse' : 'flex-row'}`}>
-            <motion.div 
-                {...(props.reverse ? slideLeft : slideRight)} 
-                className={`w-[95%] md:w-[48%] flex flex-col md:flex-row bg-background rounded-xl p-6 gap-6 items-center z-20 shadow-md shadow-shadow`}
-            >
-                <div className="flex-1">
-                    <div className="flex items-center flex-col md:flex-row items-baseline gap-2 mb-2">
-                        <h2 className="font-serif-display text-2xl md:text-3xl font-bold">{props.titre}</h2>
-                        <span className="font-open-sans font-semibold text-gray-500 text-sm">{props.dates}</span>
+            <a href={props.lien} target="_blank" rel="noopener noreferrer" className='w-[95%] md:w-[48%]'>
+                <motion.div 
+                    {...(props.reverse ? slideLeft : slideRight)} 
+                    className={` flex flex-col md:flex-row bg-background rounded-xl p-6 gap-6 items-center z-20 shadow-md shadow-shadow`}
+                >
+                    <div className="flex-1">
+                        <div className="flex items-center flex-col md:flex-row items-baseline gap-2 mb-2">
+                            <h2 className="font-serif-display text-2xl md:text-3xl font-bold">{props.titre}</h2>
+                            <span className="font-open-sans font-semibold text-gray-500 text-sm">{props.dates}</span>
+                        </div>
+                        <h3 className="text-center md:text-start font-space-grotesk text-lg md:text-xl text-purple-second font-bold mb-2">
+                            {props.sousTitre}
+                        </h3>
+                        <p className="font-open-sans text-base text-justify leading-relaxed">
+                            {props.texte}
+                        </p>
                     </div>
-                    <h3 className="text-center md:text-start font-space-grotesk text-lg md:text-xl text-purple-second font-bold mb-2">
-                        {props.sousTitre}
-                    </h3>
-                    <p className="font-open-sans text-base text-justify leading-relaxed">
-                        {props.texte}
-                    </p>
-                </div>
-                <img src={props.image} alt={`Logo ${props.titre}`} className="w-40 h-40 object-contain shrink-0"/>
-            </motion.div>
+                    <img src={props.image} alt={`Logo ${props.titre}`} className="w-40 h-40 object-contain shrink-0"/>
+                </motion.div>
+            </a>
 
             {/* POINT CENTRAL */}
             <motion.div 

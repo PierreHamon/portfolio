@@ -21,14 +21,14 @@ function Parcours() {
       </div>
 
       <div className="relative w-11/12 max-w-[1500px] mx-auto">
-
-        <ElementParcours 
-          titre="Lycée Marcel callo" 
-          dates="2019 - 2022"
-          sousTitre="BAC Maths et NSI option européenne"
-          texte="J'ai été étudiant au lycée Marcel Callo à Redon (35600), où j'ai décroché mon BAC spécialité maths et NSI mention bien et européenne."
-          image={logo_callo}
-        />
+          <ElementParcours 
+            titre="Lycée Marcel callo" 
+            dates="2019 - 2022"
+            sousTitre="BAC Maths et NSI option européenne"
+            texte="J'ai été étudiant au lycée Marcel Callo à Redon (35600), où j'ai décroché mon BAC spécialité maths et NSI mention bien et européenne."
+            image={logo_callo}
+            lien="https://lyceemarcelcallo.org/"
+          />
         <ElementParcours 
           titre="IUT de Lannion" 
           dates="2022 - 2025"
@@ -36,6 +36,7 @@ function Parcours() {
           texte="J'ai été étudiant à l'IUT de Lannion (22300), j'y ai obtenu mon BUT Informatique parcours Développement d'applications mention bien. Ma deuxième et troisième année ont été faites en alternance au Centre Informatique de Lamballe (CIL)."
           image={logo_iut}
           reverse={true}
+          lien="https://iut-lannion.univ-rennes.fr/"
         />
         <ElementParcours 
           titre="Alternance CIL" 
@@ -43,6 +44,7 @@ function Parcours() {
           sousTitre="Développeur IBM i"
           texte="Lors de mon alternance, j'ai été apprenti développeur IBM i au sein du CIL, j'y fais quelques tâches simples d'abord puis au fur et à mesure des projets plus conséquents."
           image={logo_cil}
+          lien="https://www.cil-lamballe.com/"
         />
       </div>
     </section>

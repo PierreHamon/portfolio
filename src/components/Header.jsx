@@ -34,9 +34,9 @@ function Header() {
       <div className="fixed border-b-1 border-border md:border-0 md:relative top-0 py-2 flex flex-row bg-background left-0 w-full justify-between cursor-pointer z-50">
       <div className="order-2 md:order-1 flex gap-2 items-center md:ms-6 bg-white-menu shadow-sm shadow-shadow rounded-lg p-2">
         {/* Ton texte */}
-        <p className='font-open-sans me-1 text-sm'>
-          V 1.0 - En cours d'amélioration
-        </p>
+        <a href="https://github.com/PierreHamon/portfolio/commits/main" target="_blank" rel="noopener noreferrer" className='font-open-sans me-1 text-sm'>
+          En cours d'amélioration
+        </a>
         {/* Diode verte animée */}
         <span className="relative flex h-2.5 w-2.5 shrink-0">
         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>

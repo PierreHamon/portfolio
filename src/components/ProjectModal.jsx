@@ -4,7 +4,7 @@ function ProjectModal({ project, onClose }) {
     if (project == null) return null;
     return (
         <div onClick={onClose} className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center">
-            <div className="bg-background max-w-[80%] w-full p-6 rounded-xl" onClick={(e) => e.stopPropagation()}>
+            <div className="bg-background max-h-[95%] overflow-y-auto max-w-[80%] w-full p-6 rounded-xl" onClick={(e) => e.stopPropagation()}>
                 <h2 className="font-serif-display text-2xl md:text-4xl text-center">
                     {project.titre}
                 </h2>
@@ -25,7 +25,7 @@ function ProjectModal({ project, onClose }) {
                         </a>
                     )}   
                 </div>
-                <p className="font-open-sans text-lg text-justify my-3 line-clamp-6">
+                <p className="font-open-sans text-base md:text-lg text-justify my-3 line-clamp-6">
                     {project.description}
                 </p>
                 <div>

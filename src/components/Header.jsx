@@ -99,7 +99,7 @@ function Header() {
           </svg>
         </i>
         
-        <div className={`fixed md:hidden top-18 py-5 left-0 w-full bg-background flex flex-col items-center
+        <div className={`fixed md:hidden top-[6%] py-5 left-0 w-full bg-background flex flex-col items-center
             transform transition-transform
             ${isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
           <ul className="flex flex-col items-start gap-6">
